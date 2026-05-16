@@ -39,3 +39,11 @@ PUT /tasks/{id}
 DELETE /tasks/{id}
 Deployment
 Live URL: https://task-management-qpzn.onrender.com
+
+## Deployment
+- Backend: https://task-management-qpzn.onrender.com
+- Frontend: https://task-management-frontend-f8ja.onrender.com
+- API Docs: https://task-management-qpzn.onrender.com/docs
+
+> Note: Free tier server may take 50 seconds to wake up on first visit.
+> Please open the API docs link first, wait for response, then use the frontend.

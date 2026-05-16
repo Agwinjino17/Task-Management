@@ -1,44 +1,53 @@
-Task Manager API
+# Task Manager API
+
 A simple Task Manager built with FastAPI, SQLite, and JWT Authentication.
 
-Tech Stack
-FastAPI
-SQLAlchemy + SQLite
-JWT Authentication
-bcrypt Password Hashing
-HTML + CSS + JS Frontend
-Setup Instructions
-1. Clone the repo
-git clone https://github.com/yourusername/task-manager.git cd task-manager/backend
+## Tech Stack
+- FastAPI
+- SQLAlchemy + SQLite
+- JWT Authentication
+- bcrypt Password Hashing
+- HTML + CSS + JS Frontend
 
-2. Create virtual environment
-python -m venv venv venv\Scripts\activate
+## Setup Instructions
 
-3. Install dependencies
+### 1. Clone the repo
+git clone https://github.com/Agwinjino17/Task-Management.git
+cd Task-Management/backend
+
+### 2. Create virtual environment
+python -m venv venv
+venv\Scripts\activate
+
+### 3. Install dependencies
 pip install -r requirements.txt
 
-4. Create .env file
-Copy .env.example to .env and fill values
+### 4. Create .env file
+cp .env.example .env
 
-5. Run the server
+### 5. Run the server
 uvicorn app.main:app --reload
 
-6. Open frontend
-Open frontend/index.html in browser
+### 6. Open frontend
+Open `Frontend/index.html` in browser
 
-Environment Variables
-SECRET_KEY=your_secret_key DATABASE_URL=sqlite:///./taskmanager.db
+## Environment Variables
+| Variable | Description |
+|----------|-------------|
+| SECRET_KEY | JWT secret key |
+| DATABASE_URL | SQLite database URL |
 
-API Endpoints
-POST /register
-POST /login
-GET /tasks
-POST /tasks
-GET /tasks/{id}
-PUT /tasks/{id}
-DELETE /tasks/{id}
-Deployment
-Live URL: https://task-management-qpzn.onrender.com
+## API Endpoints
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | /register | Register user |
+| POST | /login | Login user |
+| GET | /profile | Get profile |
+| GET | /tasks | Get all tasks |
+| POST | /tasks | Create task |
+| GET | /tasks/{id} | Get single task |
+| PUT | /tasks/{id} | Update task |
+| DELETE | /tasks/{id} | Delete task |
 
 ## Deployment
 - Backend: https://task-management-qpzn.onrender.com
